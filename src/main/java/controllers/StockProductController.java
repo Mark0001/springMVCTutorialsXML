@@ -15,7 +15,7 @@ import utils.PseudoData;
  
  
 @RestController
-@RequestMapping(value=  "/stocks", produces={MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(value=  "/stocks", produces={"application/xml;charset=UTF-8", "application/json;charset=UTF-8"})
 public class StockProductController  { 	
 	 
 	@RequestMapping(value="/exp", method=GET)
