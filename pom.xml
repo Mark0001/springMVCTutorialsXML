@@ -46,13 +46,13 @@
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
 			<version>4.5.2</version>
-		</dependency>		
+		</dependency>
 		<dependency>
 			<groupId>org.eclipse.paho</groupId>
 			<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
 			<version>1.1.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.fusesource.mqtt-client</groupId>
 			<artifactId>mqtt-client</artifactId>
@@ -63,7 +63,7 @@
 			<artifactId>websocket-client</artifactId>
 			<version>${websocket.client.version}</version>
 		</dependency>
-		
+
 		<!-- Spring dependencies -->
 		<!-- Spring core container -->
 		<dependency>
@@ -86,7 +86,7 @@
 			<artifactId>spring-expression</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 
 		<!-- Spring data access / integration -->
 		<dependency>
@@ -323,6 +323,11 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>${commons-lang3.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>xmlunit</groupId>
+			<artifactId>xmlunit</artifactId>
+			<version>1.6</version>
+		</dependency>
 
 	</dependencies>
 	<build>
@@ -389,21 +394,21 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<pluginRepositories>
-<!-- 		<pluginRepository> -->
-<!-- 			<id>ude-repo1</id> -->
-<!-- 			<url>http://192.168.57.21/nexus/content/groups/public/</url> -->
-<!-- 			<snapshots> -->
-<!-- 				<enabled>true</enabled> -->
-<!-- 				<updatePolicy>never</updatePolicy> -->
-<!-- 				<checksumPolicy>warn</checksumPolicy> -->
-<!-- 			</snapshots> -->
-<!-- 			<releases> -->
-<!-- 				<enabled>true</enabled> -->
-<!-- 				<checksumPolicy>warn</checksumPolicy> -->
-<!-- 			</releases> -->
-<!-- 		</pluginRepository> -->
+		<!-- <pluginRepository> -->
+		<!-- <id>ude-repo1</id> -->
+		<!-- <url>http://192.168.57.21/nexus/content/groups/public/</url> -->
+		<!-- <snapshots> -->
+		<!-- <enabled>true</enabled> -->
+		<!-- <updatePolicy>never</updatePolicy> -->
+		<!-- <checksumPolicy>warn</checksumPolicy> -->
+		<!-- </snapshots> -->
+		<!-- <releases> -->
+		<!-- <enabled>true</enabled> -->
+		<!-- <checksumPolicy>warn</checksumPolicy> -->
+		<!-- </releases> -->
+		<!-- </pluginRepository> -->
 		<pluginRepository>
 			<id>otto.snapshots</id>
 			<url>https://otto.takari.io/content/repositories/public/</url>
@@ -441,15 +446,15 @@
 		</pluginRepository>
 	</pluginRepositories>
 	<repositories>
-<!-- 		<repository> -->
-<!-- 			<id>ude-repo1</id> -->
-<!-- 			<name>ude custom repo</name> -->
-<!-- 			<url>http://192.168.57.21/nexus/content/groups/public/</url> -->
-<!-- 		</repository> -->
-<!-- 		<repository> -->
-<!-- 			<id>localRepository</id> -->
-<!-- 			<url>file://G:/maven_repository/to/local/repo</url> -->
-<!-- 		</repository> -->
+		<!-- <repository> -->
+		<!-- <id>ude-repo1</id> -->
+		<!-- <name>ude custom repo</name> -->
+		<!-- <url>http://192.168.57.21/nexus/content/groups/public/</url> -->
+		<!-- </repository> -->
+		<!-- <repository> -->
+		<!-- <id>localRepository</id> -->
+		<!-- <url>file://G:/maven_repository/to/local/repo</url> -->
+		<!-- </repository> -->
 		<repository>
 			<id>otto.snapshots</id>
 			<url>https://otto.takari.io/content/repositories/public/</url>
