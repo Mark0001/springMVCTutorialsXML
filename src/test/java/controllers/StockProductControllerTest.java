@@ -115,17 +115,12 @@ public class StockProductControllerTest {
 		andExpect(content().
 				xml("<linked-list><model.Person><age>2</age><name>老王1</name><gender>false</gender></model.Person><model.Person><age>2</age><name>老王2</name><gender>true</gender></model.Person></linked-list>"));
 		
-		/***
-		 * 測試json內容(demo)
-		 * **/		
-		MvcResult mvcResult03 = this.mockMvc.perform(get("/stocks/exp.json"))
-			.andReturn();
-		
-		MockHttpServletResponse data03 = mvcResult01.getResponse();
+		  
 		 
-		System.out.println(data03.getContentType()); 
-		System.out.println(data03.getContentAsString()); 
-		List<Person> data = parseJSON(data03.getContentAsString());
+		/***
+		 * 測試json內容(demo)是否能轉回model
+		 * **/
+		List<Person> data = parseJSON(data01.getContentAsString());
 		Assert.assertEquals(2, data.size());
 	}
 
